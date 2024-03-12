@@ -1,5 +1,5 @@
 class Quiz:
-    def _init_(self, questions):
+    def __init__(self, questions):
         self.questions = questions
         self.score = 0
 
@@ -27,7 +27,7 @@ class Quiz:
         print("Your final score is:", self.score)
 
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     questions = [
         ("What is the capital of France?", ["Paris", "London", "Berlin"], "Paris"),
         ("What is 2 + 2?", ["3", "4", "5"], "4"),
